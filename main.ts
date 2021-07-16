@@ -1,1 +1,132 @@
+function 一音進める() {
+    
+    音程 = 音楽[現在の音][0]
+    if (音程 == 0) {
+        music.rest(音楽[現在の音][1])
+    } else {
+        music.playTone(音程, 音楽[現在の音][1])
+    }
+    
+    現在の音 += 1
+    if (音楽.length == 現在の音) {
+        現在の音 = 0
+    }
+    
+}
 
+function 音を再生() {
+    music.playTone(87, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(130, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(87, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(130, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(87, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(130, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(87, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(311, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(311, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.playTone(233, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(466, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Double))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(311, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(311, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(262, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.playTone(233, music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(466, music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Whole))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(698, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(698, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(330, music.beat(BeatFraction.Half))
+}
+
+let 現在の音 = 0
+let 音程 = 0
+let 音楽 : number[][] = []
+basic.pause(1000)
+音楽 = [[87, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [130, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [87, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [130, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [87, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [130, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [87, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [262, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [311, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [262, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [311, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [262, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [349, music.beat(BeatFraction.Half)], [233, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [349, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [494, music.beat(BeatFraction.Half)], [466, music.beat(BeatFraction.Half)], [349, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Whole)], [262, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [311, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [262, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [311, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [262, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [330, music.beat(BeatFraction.Half)], [349, music.beat(BeatFraction.Half)], [233, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Half)], [349, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [494, music.beat(BeatFraction.Half)], [466, music.beat(BeatFraction.Half)], [349, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Double)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [698, music.beat(BeatFraction.Quarter)], [0, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Quarter)], [0, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [698, music.beat(BeatFraction.Quarter)], [0, music.beat(BeatFraction.Half)], [440, music.beat(BeatFraction.Quarter)], [0, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [523, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Half)], [294, music.beat(BeatFraction.Quarter)], [0, music.beat(BeatFraction.Half)], [349, music.beat(BeatFraction.Quarter)], [0, music.beat(BeatFraction.Quarter)], [330, music.beat(BeatFraction.Half)], [0, music.beat(BeatFraction.Double)]]
+basic.forever(function on_forever() {
+    if (input.lightLevel() > 30) {
+        一音進める()
+    }
+    
+})
